@@ -11,64 +11,7 @@
     --box_shadow: rgba(3, 46, 87, 0.3);
 }
 
-/* ... (Previous CSS code) ... */
 
-/* Mobile Specific Styles */
-
-@media screen and (max-width: 480px) {
-  .container {
-    width: 95%; /* Adjust width for smaller screens */
-  }
-
-  /* For smaller screens, reduce the size of the search box and its elements */
-  .search_box {
-    width: 100%;
-    max-width: none;
-    margin-top: 1rem;
-    padding: 0.3rem;
-  }
-
-  .search_box input {
-    font-size: 1.2rem;
-    padding: 0.5rem 0.7rem;
-  }
-
-  .search_box button {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-
-  /* Modify the size and spacing of the weather details for smaller screens */
-  #show h2 {
-    font-size: 2rem;
-    margin: 2rem 0 1rem 0;
-  }
-
-  .weather, .desc {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-  }
-
-  .temp_container {
-    margin: 1rem 0 2rem 0;
-  }
-
-  .temp_container div {
-    padding: 0.5rem 1rem;
-  }
-
-  /* Adjust the size of the weather icon for smaller screens */
-  #show img {
-    width: 6rem;
-  }
-
-  /* Modify the size of the heading for smaller screens */
-  #show h1 {
-    font-size: 3rem;
-  }
-}
-
-/* ... (Remaining CSS code) ... */
 
 
 
@@ -209,3 +152,63 @@ body {
   color: var(--orange-color);
   font-size: 1.6rem;
 }
+
+
+/* ... (Previous CSS code) ... */
+
+/* Mobile Specific Styles */
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 95%; /* Adjust width for smaller screens */
+  }
+
+  /* For smaller screens, reduce the size of the search box and its elements */
+  .search_box {
+    width: 100%;
+    max-width: none;
+    margin-top: 1rem;
+    padding: 0.3rem;
+  }
+
+  .search_box input {
+    font-size: 1.2rem;
+    padding: 0.5rem 0.7rem;
+  }
+
+  .search_box button {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  /* Modify the size and spacing of the weather details for smaller screens */
+  #show h2 {
+    font-size: 2rem;
+    margin: 2rem 0 1rem 0;
+  }
+
+  .weather, .desc {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+
+  .temp_container {
+    margin: 1rem 0 2rem 0;
+  }
+
+  .temp_container div {
+    padding: 0.5rem 1rem;
+  }
+
+  /* Adjust the size of the weather icon for smaller screens */
+  #show img {
+    width: 6rem;
+  }
+
+  /* Modify the size of the heading for smaller screens */
+  #show h1 {
+    font-size: 3rem;
+  }
+}
+
+/* ... (Remaining CSS code) ... */
