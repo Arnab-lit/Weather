@@ -1,7 +1,5 @@
-/*-----------------  GOOGLE FONTS  -----------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600&display=swap');
 
-/*-----------------  VARIABLES  -----------------*/
 :root {
     /* Colors */ 
     --orange-color: rgb(37, 241, 105);
@@ -11,11 +9,7 @@
     --box_shadow: rgba(3, 46, 87, 0.3);
 }
 
-
-
-
-
-html{
+html {
     font-size: 10px;
     /* Now 1rem = 10px */
 }
@@ -26,6 +20,7 @@ html{
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
+
 body {
     background: url(image/background.png);
     background-position: center;
@@ -36,8 +31,9 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .container {
-    width: 35%;
+    width: 80%; /* Adjust the width for mobile devices */
     height: auto;
     background: var(--background);
     backdrop-filter: blur(0.5rem);
@@ -47,168 +43,155 @@ body {
     justify-content: center;
     border-radius: 1rem;
     box-shadow: 0 1.8rem 3.7rem var(--box_shadow);
-}
-.search_box {
-  width: 40rem;
-  background: rgba(255, 255, 255, 0.2);
-  display: flex;
-  align-items: center;
-  border-radius: 3rem;
-  padding: 1rem 1rem;
-  backdrop-filter: blur(0.4rem) saturate(180%);
-  box-shadow: 0 1.8rem 3.7rem var(--box_shadow);
-  margin-top: 5rem;
+    margin-top: 5rem; /* Adjust the margin for mobile devices */
 } 
+
+.search_box {
+    width: 90%; /* Adjust the width for mobile devices */
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    border-radius: 3rem;
+    padding: 1rem 1rem;
+    backdrop-filter: blur(0.4rem) saturate(180%);
+    box-shadow: 0 1.8rem 3.7rem var(--box_shadow);
+    margin-top: 2rem; /* Adjust the margin for mobile devices */
+} 
+
 .search_box input {
-  background: transparent;
-  flex: 1;
-  border: 0;
-  outline: none;
-  padding: 0 1rem;
-  font-size: 1.6rem;
-  color:var(--dark-color);
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 0 1rem;
+    font-size: 1.6rem;
+    color: var(--dark-color);
 }
+
 .search_box input::placeholder {
-  color: var(--dark-color);
+    color: var(--dark-color);
 }
+
 .search_box button {
-  border: 0;
-  border-radius: 50%;
-  background:var(--orange-color);
-  cursor: pointer;
-  width: 3rem;
-  height: 3rem;
+    border: 0;
+    border-radius: 50%;
+    background: var(--orange-color);
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
 }
+
 .search_box .icon {
-  width: 2rem;
-  height: 2rem; 
-  padding: 0.5rem;
-  color: var(--dark-color); 
+    width: 2rem;
+    height: 2rem; 
+    padding: 0.5rem;
+    color: var(--dark-color); 
 }
+
 .error {
-  margin: 4rem 0 5rem 0;
-  color: var(--dark-color);
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 2rem;
-  letter-spacing: 0.1rem;
+    margin: 2rem 0;
+    color: var(--dark-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
 }
+
 #show {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem; /* Adjust the margin for mobile devices */
 }
+
 #show h2 {
-  color: var(--dark-color);
-  text-transform: uppercase;
-  letter-spacing: 0.18rem;
-  font-weight: 600;
-  font-size: 2.6rem;
-  margin: 3rem 0 2rem 0;
-}
-.weather, .desc {
-  color: var(--dark-color);
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  font-size: 1.4rem;
-  font-weight: 600;
-  line-height: 2rem;
-}
-.weather {
-  margin: 1rem 0;
-}
-#show img {
-  margin: 2rem 0 0 0;
-  width: 10rem;
-  filter: drop-shadow(0 1.8rem 3.7rem var(--shadow));
-}
-#show h1 {
-  font-size: 6rem;
-  margin: 2rem 0 2rem 0;
-  line-height: 0;
-  font-weight: 400;
-  color: var(--dark-color);
-}
-.temp_container {
-  display: flex;
-  justify-content: center;
-  margin: 3rem 0 5rem 0;
-  text-align: center;
-}
-.temp_container div {
-  padding: 1rem 1.5rem;
-}
-.temp_container div:first-child {
-  border-right: 0.1rem solid var(--border);
-}
-.temp_container .title {
-  font-weight: 600;
-  color: var(--dark-color);
-  font-size: 1.6rem;
-}
-.temp_container .temp {
-  font-weight: 600;
-  color: var(--orange-color);
-  font-size: 1.6rem;
-}
-
-
-/* ... (Previous CSS code) ... */
-
-/* Mobile Specific Styles */
-
-@media screen and (max-width: 480px) {
-  .container {
-    width: 95%; /* Adjust width for smaller screens */
-  }
-
-  /* For smaller screens, reduce the size of the search box and its elements */
-  .search_box {
-    width: 100%;
-    max-width: none;
-    margin-top: 1rem;
-    padding: 0.3rem;
-  }
-
-  .search_box input {
-    font-size: 1.2rem;
-    padding: 0.5rem 0.7rem;
-  }
-
-  .search_box button {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-
-  /* Modify the size and spacing of the weather details for smaller screens */
-  #show h2 {
+    color: var(--dark-color);
+    text-transform: uppercase;
+    letter-spacing: 0.18rem;
+    font-weight: 600;
     font-size: 2rem;
-    margin: 2rem 0 1rem 0;
-  }
-
-  .weather, .desc {
-    font-size: 1.2rem;
-    margin: 0.5rem 0;
-  }
-
-  .temp_container {
-    margin: 1rem 0 2rem 0;
-  }
-
-  .temp_container div {
-    padding: 0.5rem 1rem;
-  }
-
-  /* Adjust the size of the weather icon for smaller screens */
-  #show img {
-    width: 6rem;
-  }
-
-  /* Modify the size of the heading for smaller screens */
-  #show h1 {
-    font-size: 3rem;
-  }
+    margin: 1rem 0;
 }
 
-/* ... (Remaining CSS code) ... */
+.weather, .desc {
+    color: var(--dark-color);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.weather {
+    margin: 1rem 0;
+}
+
+#show img {
+    margin: 2rem 0;
+    width: 10rem;
+    filter: drop-shadow(0 1.8rem 3.7rem var(--box_shadow));
+}
+
+#show h1 {
+    font-size: 4rem;
+    margin: 1rem 0;
+    line-height: 0;
+    font-weight: 400;
+    color: var(--dark-color);
+}
+
+.temp_container {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.temp_container div {
+    padding: 1rem 1.5rem;
+}
+
+.temp_container div:first-child {
+    border-right: 0.1rem solid var(--border);
+}
+
+.temp_container .title {
+    font-weight: 600;
+    color: var(--dark-color);
+    font-size: 1.6rem;
+}
+
+.temp_container .temp {
+    font-weight: 600;
+    color: var(--orange-color);
+    font-size: 1.6rem;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 600px) {
+  .container {
+      width: 90%;
+  }
+
+  .search_box {
+      width: 100%;
+  }
+
+  .error {
+      font-size: 1.4rem;
+  }
+
+  #show h2 {
+      font-size: 1.8rem;
+  }
+
+  #show h1 {
+      font-size: 3rem;
+  }
+
+  .temp_container .title,
+  .temp_container .temp {
+      font-size: 1.4rem;
+  }
+}
