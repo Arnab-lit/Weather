@@ -173,23 +173,18 @@ body {
   .container {
       width: 90%;
   }
-
   .search_box {
       width: 100%;
   }
-
   .error {
       font-size: 1.4rem;
   }
-
   #show h2 {
       font-size: 1.8rem;
   }
-
   #show h1 {
       font-size: 3rem;
   }
-
   .temp_container .title,
   .temp_container .temp {
       font-size: 1.4rem;
